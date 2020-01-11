@@ -1,10 +1,10 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]           PEJUANG RECEH                \n");
+echo color("green","[]          PEJUANG RECEH                \n");
 echo color("yellow","[]       AAK AND GEMBEL ELIT             \n");
 echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("yellow","[]       waiting proses.....             \n");
+echo color("yellow","[]         waiting proses.....           \n");
 echo color("yellow","[] cara menulis nomor pakai 62xxxxxxxxxx \n");
 function change(){
         $nama = nama();
@@ -103,7 +103,7 @@ function change(){
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","===============(SET PIN)===============")."\n";
+         echo color("red","========( PIN ANDA = 787878 )========")."\n";
          $data2 = '{"pin":"787878"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp set pin: ";
@@ -135,8 +135,8 @@ function change(){
          echo "\n==============Register==============\n";
          goto ulang;
          }else{
-         echo "\n==============Register==============\n";
-         goto ulang;
+         echo "\n==============Bye==============\n";
+         goto die();
   }
  }
 }
