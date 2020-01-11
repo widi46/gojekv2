@@ -135,8 +135,8 @@ function change(){
          echo "\n==============Register==============\n";
          goto ulang;
          }else{
-         echo "\n==============Bye==============\n";
-         goto exit();
+         echo "\n==============Register==============\n";
+         goto ulang;
   }
  }
 }
