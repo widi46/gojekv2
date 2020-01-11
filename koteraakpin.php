@@ -136,7 +136,7 @@ function change(){
          goto ulang;
          }else{
          echo "\n==============Bye==============\n";
-         goto die();
+         goto exit();
   }
  }
 }
